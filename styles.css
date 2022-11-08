@@ -1,0 +1,48 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+ .container{
+    max-width:1440px;
+    width:60%;
+    margin: 40px auto;
+} 
+
+.clock {
+    
+     margin-bottom:40px; 
+    font-size:5rem;
+    font-family:'Noto Sans Mono';
+    color:Cyan;
+    padding:20px 30px;
+    text-align:center;
+    background-color: black;
+    border:solid 3px black;
+}
+
+
+
+.img-slide{
+    max-width:900px;
+    width:100%;
+    object-fit: cover;
+}
+
+.slide-content{
+    position:relative;
+}
+
+.text{
+    position:absolute;
+    bottom:10%;
+    left:50%;
+    transform: translate(-50%);
+    background-color:beige;
+    opacity:50%;
+    padding:30px;
+    text-align: center;
+    color:darkblue;
+    font-weight:600;
+}
