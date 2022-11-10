@@ -13,14 +13,16 @@ function showTime(){
    let second = formatTime(time.getSeconds());
    let pm_am;
 
+  
 
-  if (hour>=12 && hour >=24){
-     
+  if (hour>=12 && hour <=24){
      pm_am = "PM";
     } else{
+     console.log('alooo')
+
     pm_am ="AM";
     }
-// ai PM da AM verafrit davalage 
+
 
      let currentTime = hour + ":" + minute + ":" + second + " " + pm_am;
      let clock = document.querySelector(".clock").innerHTML = currentTime;
@@ -53,6 +55,7 @@ function formatTime(time) {
 let start = document.querySelector(".start");
 let stop = document.querySelector(".stop");
  let image =document.querySelector("img");
+
 
 
 
@@ -118,12 +121,8 @@ start.addEventListener('click', startAudioSlide);
 function startAudioSlide(){
     audioStart = setInterval(nextSlide,1000);
 }
-
-//  function onMouse(){
-//     if(onmouseOver){
-//         stopAudioSLide;
-//     }
-//  }
+// let slidewrapper = document.querySelector(".slide-wrapper");
+// slideWrapper.addEventListener('mouseenter',  stopAudioSLide);
 
  function initSlider(){
     renderSliders();
